@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <header>
+        <h1 style="color:blue">FORMULÁRIO DE CADASTRO</h1>
+    </header>
+    <form action="">
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required="true" t status/>
+        <br><br>
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" name="email" placeholder="Digite sua email aqui..." required="true"/> 
+        <br><br>
+    
+
+        <label for="mensagem">Descrição</label><br>
+        <textarea  id="mensagem" name="mensagem" placeholder="Fale mais sobre você aqui..." cols="30" rows="5" required></textarea>
+        <br><br>
+
+        <label for="plano">Módulo</label><br>
+        <select name="plano" required="true" id="plano">
+            <option value="">Escolher módulo</option>
+            <option value="m01">M01</option>
+            <option value="m02">M02</option>
+            <option value="m03">M03</option>
+            <option value="m04">M04</option>
+            <option value="m05">M05</option>
+            <option value="m06">M06</option>
+        </select>
+        <br><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui..." required="true"/> 
+        <br><br>
+
+        <label for="senha">Confirmar Senha</label><br>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha novamente aqui..." required="true"/> 
+        <br><br>
+
+        <p>Deseja receber novidades em seu E-mail?</p>
+        <label for="sim">Sim</label>
+        <input id="sim" type="radio" required name="metodoEscolha" value="sim"/>
+        <label for="nao">Não</label>
+        <input id="nao" type="radio" required name="metodoEscolha" value="nao"/>
+        <br><br>
+        <button type="submit" style="color:aliceblue;background-color: blue;">Cadastrar</button>
+    </form>
+    
+</body>
+</html>
